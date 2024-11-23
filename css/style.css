@@ -1,0 +1,311 @@
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+
+/*NavBar*/
+
+nav {
+    background-color: rgb(208, 240, 255);
+}
+
+.fa-bars {
+    color: rgb(102, 45, 145);
+}
+
+.fa-bars:hover {
+    color: rgb(207, 21, 45);
+}
+
+.nav-link {
+    color: rgb(102, 45, 145);
+    font-weight: bold;
+    font-family: serif;
+    font-size: large;
+}
+
+.nav-link:hover {
+    color: rgb(207, 21, 45);
+}
+
+.dropdown-menu {
+    background: rgb(208, 240, 255);
+    color: rgb(102, 45, 145);
+    border: none;
+    width: fit-content;
+}
+
+.dropdown-item {
+    background-color: rgb(208, 240, 255);
+    color: rgb(102, 45, 145);
+    position: relative;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(102, 45, 145);
+    color: rgb(208, 240, 255);
+}
+
+.dropdown-item:focus {
+    color: rgb(207, 21, 45);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-btn-perso {
+    background: rgb(208, 240, 255); 
+    color: rgb(102, 45, 145);
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #662d91;
+    transition: transform ease-in-out 0.3s;
+}
+
+.dropdown-btn-perso:focus + .dropdown-menu {
+    visibility: visible;
+}
+
+.dropdown-btn-perso:focus > .arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-btn-perso:hover + .dropdown-menu {
+    visibility: visible;
+}
+
+.dropdown-btn-perso:hover > .arrow {
+    transform: rotate(180deg);
+}
+
+
+/*ABOUT Page*/
+
+.parallax { 
+	background-image: url(../images/Page_About/parallax.jpg);
+    min-height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/*AKR Page*/
+.parallax_AKR_1 { 
+	background-image: url(../images/Page_AKR/parallax.png);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax_AKR_2 { 
+	background-image: url(../images/Page_AKR/stars.jpg);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/*SH Page*/
+
+.parallax_SH_1 {
+    background-image: url(../images/Page_SH/parallax.png);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax_SH_2 { 
+	background-image: url(../images/Page_SH/parallax_2.png);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/*TCR Page*/
+.parallax_TCR_1 { 
+	background-image: url(../images/Page_TCR/parallax.jpg);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax_TCR_2 { 
+	background-image: url(../images/Page_TCR/parallax_2.jpg);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/*HSR Page*/
+.parallax_HSR_1 { 
+	background-image: url(../images/Page_HSR/parallax.png);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax_HSR_2 { 
+	background-image: url(../images/Page_HSR/angel.png);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/*CONTACT Page*/
+.parallax_CONTACT_1 {
+    background-image: url(../images/Page_Contact/parallax.png);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#img_hannah {
+    width: 400px;
+    height: 400px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*Others*/
+
+.transbox {
+    background-color: rgb(255, 255, 255, 0.3);
+    min-height: 100%;
+    font-family: serif;
+}
+
+.transbox_2 {
+    background-color: rgb(208, 240, 255, 0.5);
+    height: 100%;
+}
+
+.transbox_3 {
+    background-color: rgb(208, 240, 255, 0.7);
+    height: 100%;
+}
+
+.p_texte {
+    font-family: verdana;
+    font-size: 14px;
+    color: rgb(102, 45, 145);
+    text-shadow: 1px 1px 1px rgb(208, 151, 255),
+        1px 3px 1px rgb(223, 184, 255);
+}
+
+.h_texte {
+    font-family: verdana;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(102, 45, 145);
+    text-shadow: 1px 1px 1px rgb(177, 83, 255),
+        1px 2px 1px rgb(195, 121, 255);
+}
+
+.title_perso{
+    font-size: 60px;
+    color: #662d91;
+}
+
+.btn-perso {
+    background-color: rgb(208, 240, 255, 0.7);
+    border-color: #662d91;
+    color: #662d91;
+    width: 110px;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.btn-perso:hover {
+    background-color: rgb(102, 45, 145, 0.7);
+    border-color: rgb(208, 240, 255);
+    color: rgb(208, 240, 255);
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 992px) {
+    .logo {
+        text-align: start;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .transbox {
+        font-size: large;
+    }
+    .logo {
+        text-align: end;
+    }
+    .title_perso{
+        font-size: 80px;
+    }
+    .h_texte{
+        font-size: 24px;
+    }
+    .p_texte{
+        font-size: 18px;
+    }
+    .btn-perso {
+        width: 135px;
+        margin: 10px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .logo {
+        text-align: center;
+    }
+    .title_perso{
+        font-size: 100px;
+    }
+    .h_texte{
+        font-size: 28px;
+    }
+    .p_texte{
+        font-size: 22px;
+    }
+    .btn-perso {
+        width: 160px;
+        margin: 10px;
+        font-size: 20px;
+    }
+}
+
