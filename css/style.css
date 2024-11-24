@@ -5,7 +5,6 @@ body, html {
 
 
 /*NavBar*/
-
 nav {
     background-color: rgb(208, 240, 255);
 }
@@ -57,7 +56,7 @@ nav {
 }
 
 .dropdown-btn-perso {
-    background: rgb(208, 240, 255); 
+    background: rgb(208, 240, 255);
     color: rgb(102, 45, 145);
     border: none;
     display: flex;
@@ -91,8 +90,7 @@ nav {
 
 
 /*ABOUT Page*/
-
-.parallax { 
+.parallax {
 	background-image: url(../images/Page_About/parallax.jpg);
     min-height: 100%;
 	background-attachment: fixed;
@@ -103,7 +101,7 @@ nav {
 
 
 /*AKR Page*/
-.parallax_AKR_1 { 
+.parallax_AKR_1 {
 	background-image: url(../images/Page_AKR/parallax.png);
     min-height: 75%;
 	background-attachment: fixed;
@@ -112,7 +110,7 @@ nav {
 	background-size: cover;
 }
 
-.parallax_AKR_2 { 
+.parallax_AKR_2 {
 	background-image: url(../images/Page_AKR/stars.jpg);
     min-height: 75%;
 	background-attachment: fixed;
@@ -123,7 +121,6 @@ nav {
 
 
 /*SH Page*/
-
 .parallax_SH_1 {
     background-image: url(../images/Page_SH/parallax.png);
     min-height: 75%;
@@ -133,7 +130,7 @@ nav {
 	background-size: cover;
 }
 
-.parallax_SH_2 { 
+.parallax_SH_2 {
 	background-image: url(../images/Page_SH/parallax_2.png);
     min-height: 75%;
 	background-attachment: fixed;
@@ -144,7 +141,7 @@ nav {
 
 
 /*TCR Page*/
-.parallax_TCR_1 { 
+.parallax_TCR_1 {
 	background-image: url(../images/Page_TCR/parallax.jpg);
     min-height: 75%;
 	background-attachment: fixed;
@@ -153,7 +150,7 @@ nav {
 	background-size: cover;
 }
 
-.parallax_TCR_2 { 
+.parallax_TCR_2 {
 	background-image: url(../images/Page_TCR/parallax_2.jpg);
     min-height: 75%;
 	background-attachment: fixed;
@@ -164,7 +161,7 @@ nav {
 
 
 /*HSR Page*/
-.parallax_HSR_1 { 
+.parallax_HSR_1 {
 	background-image: url(../images/Page_HSR/parallax.png);
     min-height: 75%;
 	background-attachment: fixed;
@@ -173,7 +170,7 @@ nav {
 	background-size: cover;
 }
 
-.parallax_HSR_2 { 
+.parallax_HSR_2 {
 	background-image: url(../images/Page_HSR/angel.png);
     min-height: 75%;
 	background-attachment: fixed;
@@ -202,7 +199,6 @@ nav {
 
 
 /*Others*/
-
 .transbox {
     background-color: rgb(255, 255, 255, 0.3);
     min-height: 100%;
@@ -257,12 +253,36 @@ nav {
     color: rgb(208, 240, 255);
 }
 
+.ribbon-2 {
+    --f: 10px; /* control the folded part*/
+    --r: 15px; /* control the ribbon shape */
+    --t: 30px; /* the top offset */
+    
+    position: absolute;
+    inset: var(--t) calc(0.5*var(--f)) auto auto;
+    padding: 0 20px var(--f) calc(20px + var(--r));
+    clip-path: 
+        polygon(0 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,
+        calc(100% - var(--f)) calc(100% - var(--f)),0 calc(100% - var(--f)),
+        var(--r) calc(50% - var(--f)/2));
+    background: #BD1550;
+    box-shadow: 0 calc(-1*var(--f)) 0 inset #0005;
+    color: rgb(208, 240, 255);
+}
+
 
 /*Media Queries*/
-
 @media only screen and (max-width: 992px) {
     .logo {
         text-align: start;
+    }
+
+    .ribbon-2 {
+        transform: scale(0.4);
+        --f: 10px; /* control the folded part*/
+        --r: 40px; /* control the ribbon shape */
+        --t: -5px; /* the top offset */
+        translate: var(--r);
     }
 }
 
@@ -286,6 +306,13 @@ nav {
         width: 135px;
         margin: 10px;
         font-size: 16px;
+    }
+    .ribbon-2 {
+        transform: scale(0.7);
+        --f: 10px; /* control the folded part*/
+        --r: 16px; /* control the ribbon shape */
+        --t: 5px; /* the top offset */
+        translate: var(--r);
     }
 }
 
