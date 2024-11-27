@@ -180,6 +180,65 @@ nav {
 }
 
 
+/*SR Page*/
+.parallax_SR_1 {
+	background-image: url(../images/Page_SR/parallax.jpg);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax_SR_2 {
+	background-image: url(../images/Page_SR/parallax_2.jpg);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*CRAH Page*/
+.parallax_CRAH_1 {
+	background-image: url(../images/Page_CRAH/parallax.jpg);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax_CRAH_2 {
+	background-image: url(../images/Page_CRAH/parallax_2.jpg);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/*SECR Page*/
+.parallax_SECR_1 {
+	background-image: url(../images/Page_SECR/parallax.png);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax_SECR_2 {
+	background-image: url(../images/Page_SECR/parallax_2.jpg);
+    min-height: 75%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
 /*CONTACT Page*/
 .parallax_CONTACT_1 {
     background-image: url(../images/Page_Contact/parallax.png);
@@ -217,7 +276,7 @@ nav {
 
 .p_texte {
     font-family: verdana;
-    font-size: 14px;
+    font-size: 13px;
     color: rgb(102, 45, 145);
     text-shadow: 1px 1px 1px rgb(208, 151, 255),
         1px 3px 1px rgb(223, 184, 255);
@@ -225,7 +284,7 @@ nav {
 
 .h_texte {
     font-family: verdana;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     text-align: center;
     color: rgb(102, 45, 145);
@@ -268,6 +327,10 @@ nav {
     background: #BD1550;
     box-shadow: 0 calc(-1*var(--f)) 0 inset #0005;
     color: rgb(208, 240, 255);
+}
+
+.bg_perso {
+    background-color: aliceblue;
 }
 
 
