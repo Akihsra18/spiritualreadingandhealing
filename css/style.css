@@ -339,13 +339,33 @@ nav {
     .logo {
         text-align: start;
     }
-
+    .cardContainer {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .ribbon-2 {
         transform: scale(0.4);
         --f: 10px; /* control the folded part*/
         --r: 40px; /* control the ribbon shape */
         --t: -5px; /* the top offset */
         translate: var(--r);
+    }
+    .fixedContainer {
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+    }
+}
+
+@media only screen and (min-height: 992px) {
+    .cardContainer {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fixedContainer {
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
     }
 }
 
@@ -377,6 +397,14 @@ nav {
         --t: 5px; /* the top offset */
         translate: var(--r);
     }
+    .cardContainer {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fixedContainer2 {
+        position: fixed;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -397,5 +425,13 @@ nav {
         margin: 10px;
         font-size: 20px;
     }
+    .cardContainer {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem;
+    }
+    .fixedContainer2 {
+        position: fixed;
+    }
 }
-
